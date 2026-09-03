@@ -1,0 +1,478 @@
+{
+  "dataset_size": 36,
+  "categories": {
+    "answerable": 15,
+    "irrelevant": 10,
+    "hard_negative": 11
+  },
+  "recall_top_n": 10,
+  "rerank_top_k": 3,
+  "threshold": 0.5,
+  "vector_retrieval": {
+    "answerable_count": 15,
+    "hit_at_1": 0.9333,
+    "hit_at_3": 1.0,
+    "hit_at_5": 1.0,
+    "mrr": 0.9667,
+    "recall_at_1": 0.9333,
+    "recall_at_3": 1.0,
+    "recall_at_5": 1.0
+  },
+  "rerank": {
+    "mrr_before": 0.9667,
+    "mrr_after": 0.9667,
+    "hit1_before": 0.9333,
+    "hit1_after": 0.9333,
+    "hit5_before": 1.0,
+    "hit5_after": 1.0,
+    "improved_count": 0,
+    "unchanged_count": 15,
+    "degraded_count": 0,
+    "recall_miss_count": 0
+  },
+  "latency": {
+    "avg_recall_seconds": 0.0021,
+    "avg_rerank_seconds": 0.1376,
+    "p50_recall_seconds": 0.0021,
+    "p95_recall_seconds": 0.0023,
+    "p50_rerank_seconds": 0.1394,
+    "p95_rerank_seconds": 0.1463,
+    "avg_candidates": 10.0,
+    "recall_top_n": 10,
+    "rerank_top_k": 3
+  },
+  "gate": {
+    "threshold": 0.5,
+    "overall": {
+      "tp": 15,
+      "fp": 5,
+      "tn": 16,
+      "fn": 0,
+      "accuracy": 0.8611,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "fpr": 0.2381,
+      "fnr": 0.0
+    },
+    "by_category": {
+      "answerable": {
+        "count": 15,
+        "tp": 15,
+        "fn": 0,
+        "pass_rate": 1.0
+      },
+      "irrelevant": {
+        "count": 10,
+        "tn": 10,
+        "fp": 0,
+        "rejection_rate": 1.0
+      },
+      "hard_negative": {
+        "count": 11,
+        "tn": 6,
+        "fp": 5,
+        "rejection_rate": 0.5455
+      }
+    }
+  },
+  "threshold_sweep": [
+    {
+      "tp": 15,
+      "fp": 21,
+      "tn": 0,
+      "fn": 0,
+      "accuracy": 0.4167,
+      "precision": 0.4167,
+      "recall": 1.0,
+      "f1": 0.5882,
+      "fpr": 1.0,
+      "fnr": 0.0,
+      "threshold": 0.0
+    },
+    {
+      "tp": 15,
+      "fp": 7,
+      "tn": 14,
+      "fn": 0,
+      "accuracy": 0.8056,
+      "precision": 0.6818,
+      "recall": 1.0,
+      "f1": 0.8108,
+      "fpr": 0.3333,
+      "fnr": 0.0,
+      "threshold": 0.1
+    },
+    {
+      "tp": 15,
+      "fp": 6,
+      "tn": 15,
+      "fn": 0,
+      "accuracy": 0.8333,
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "fpr": 0.2857,
+      "fnr": 0.0,
+      "threshold": 0.2
+    },
+    {
+      "tp": 15,
+      "fp": 6,
+      "tn": 15,
+      "fn": 0,
+      "accuracy": 0.8333,
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "fpr": 0.2857,
+      "fnr": 0.0,
+      "threshold": 0.3
+    },
+    {
+      "tp": 15,
+      "fp": 6,
+      "tn": 15,
+      "fn": 0,
+      "accuracy": 0.8333,
+      "precision": 0.7143,
+      "recall": 1.0,
+      "f1": 0.8333,
+      "fpr": 0.2857,
+      "fnr": 0.0,
+      "threshold": 0.4
+    },
+    {
+      "tp": 15,
+      "fp": 5,
+      "tn": 16,
+      "fn": 0,
+      "accuracy": 0.8611,
+      "precision": 0.75,
+      "recall": 1.0,
+      "f1": 0.8571,
+      "fpr": 0.2381,
+      "fnr": 0.0,
+      "threshold": 0.5
+    },
+    {
+      "tp": 15,
+      "fp": 3,
+      "tn": 18,
+      "fn": 0,
+      "accuracy": 0.9167,
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "fpr": 0.1429,
+      "fnr": 0.0,
+      "threshold": 0.6
+    },
+    {
+      "tp": 15,
+      "fp": 3,
+      "tn": 18,
+      "fn": 0,
+      "accuracy": 0.9167,
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091,
+      "fpr": 0.1429,
+      "fnr": 0.0,
+      "threshold": 0.7
+    },
+    {
+      "tp": 15,
+      "fp": 2,
+      "tn": 19,
+      "fn": 0,
+      "accuracy": 0.9444,
+      "precision": 0.8824,
+      "recall": 1.0,
+      "f1": 0.9375,
+      "fpr": 0.0952,
+      "fnr": 0.0,
+      "threshold": 0.8
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.9
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.92
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.94
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.95
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.96
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.97
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "tn": 21,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "threshold": 0.975
+    },
+    {
+      "tp": 14,
+      "fp": 0,
+      "tn": 21,
+      "fn": 1,
+      "accuracy": 0.9722,
+      "precision": 1.0,
+      "recall": 0.9333,
+      "f1": 0.9655,
+      "fpr": 0.0,
+      "fnr": 0.0667,
+      "threshold": 0.98
+    },
+    {
+      "tp": 14,
+      "fp": 0,
+      "tn": 21,
+      "fn": 1,
+      "accuracy": 0.9722,
+      "precision": 1.0,
+      "recall": 0.9333,
+      "f1": 0.9655,
+      "fpr": 0.0,
+      "fnr": 0.0667,
+      "threshold": 0.985
+    },
+    {
+      "tp": 13,
+      "fp": 0,
+      "tn": 21,
+      "fn": 2,
+      "accuracy": 0.9444,
+      "precision": 1.0,
+      "recall": 0.8667,
+      "f1": 0.9286,
+      "fpr": 0.0,
+      "fnr": 0.1333,
+      "threshold": 0.99
+    },
+    {
+      "tp": 11,
+      "fp": 0,
+      "tn": 21,
+      "fn": 4,
+      "accuracy": 0.8889,
+      "precision": 1.0,
+      "recall": 0.7333,
+      "f1": 0.8462,
+      "fpr": 0.0,
+      "fnr": 0.2667,
+      "threshold": 0.995
+    }
+  ],
+  "false_positive_examples": [
+    {
+      "id": "q017",
+      "question": "数据库备份失败由哪个团队负责？",
+      "category": "hard_negative",
+      "top1_chunk": "backup-time",
+      "rerank_score": 0.5138
+    },
+    {
+      "id": "q018",
+      "question": "备份文件采用什么加密算法？",
+      "category": "hard_negative",
+      "top1_chunk": "backup-strategy",
+      "rerank_score": 0.7744
+    },
+    {
+      "id": "q020",
+      "question": "备份恢复需要多少分钟？",
+      "category": "hard_negative",
+      "top1_chunk": "backup-time",
+      "rerank_score": 0.501
+    },
+    {
+      "id": "q021",
+      "question": "Redis 集群如何分片？",
+      "category": "hard_negative",
+      "top1_chunk": "redis-deploy",
+      "rerank_score": 0.8612
+    },
+    {
+      "id": "q025",
+      "question": "日志归档到对象存储后的访问权限怎么设置？",
+      "category": "hard_negative",
+      "top1_chunk": "log-retention",
+      "rerank_score": 0.8871
+    }
+  ],
+  "false_negative_examples": [],
+  "answer_check": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "skipped": 0,
+    "pass_rate": 1.0,
+    "per_sample": [
+      {
+        "id": "q001",
+        "question": "数据库每天什么时候备份？",
+        "status": "pass",
+        "expected": "2:30"
+      },
+      {
+        "id": "q002",
+        "question": "数据库备份文件保留多久？",
+        "status": "pass",
+        "expected": "14天"
+      },
+      {
+        "id": "q003",
+        "question": "数据库采用什么备份策略？",
+        "status": "pass",
+        "expected": "每日增量"
+      },
+      {
+        "id": "q004",
+        "question": "Redis 如何部署？",
+        "status": "pass",
+        "expected": "单节点"
+      },
+      {
+        "id": "q005",
+        "question": "Redis 数据目录挂载在哪里？",
+        "status": "pass",
+        "expected": "/data/redis"
+      },
+      {
+        "id": "q006",
+        "question": "生产服务器部署在哪个机房？",
+        "status": "pass",
+        "expected": "华东机房"
+      },
+      {
+        "id": "q007",
+        "question": "服务器 CPU 温度过高时怎么处理？",
+        "status": "pass",
+        "expected": "风扇"
+      },
+      {
+        "id": "q008",
+        "question": "服务器内存超过多少应重启服务？",
+        "status": "pass",
+        "expected": "90%"
+      },
+      {
+        "id": "q009",
+        "question": "内部系统如何登录？",
+        "status": "pass",
+        "expected": "SSO"
+      },
+      {
+        "id": "q010",
+        "question": "生产环境出口 IP 是多少？",
+        "status": "pass",
+        "expected": "203.0.113.10"
+      },
+      {
+        "id": "q011",
+        "question": "监控系统用什么采集指标？",
+        "status": "pass",
+        "expected": "Prometheus"
+      },
+      {
+        "id": "q012",
+        "question": "应用日志保留多久？",
+        "status": "pass",
+        "expected": "30天"
+      },
+      {
+        "id": "q013",
+        "question": "生产数据库用什么版本？",
+        "status": "pass",
+        "expected": "MySQL 8.0"
+      },
+      {
+        "id": "q014",
+        "question": "备份恢复演练多久一次？",
+        "status": "pass",
+        "expected": "每季度"
+      },
+      {
+        "id": "q015",
+        "question": "前端用什么做负载均衡？",
+        "status": "pass",
+        "expected": "Nginx"
+      }
+    ]
+  }
+}

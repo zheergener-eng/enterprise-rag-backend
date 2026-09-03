@@ -1,0 +1,499 @@
+{
+  "total_documents": 6,
+  "total_chunks": 88,
+  "per_document_chunk_count": {
+    "01_xinghe_operations.md": 12,
+    "02_database_backup_policy.md": 13,
+    "03_redis_operations.md": 16,
+    "04_server_operations.md": 15,
+    "05_security_policy.md": 17,
+    "06_incident_response.md": 15
+  },
+  "avg_chunk_length": 148.98,
+  "min_chunk_length": 52,
+  "max_chunk_length": 413,
+  "documents": [
+    {
+      "document": "01_xinghe_operations.md",
+      "document_id": "01_xinghe_operations.md",
+      "chunk_count": 12,
+      "chunks": [
+        {
+          "chunk_id": "01_xinghe_operations.md:0",
+          "chunk_index": 0,
+          "text_preview": "星河项目总体运维规范 > 1. 文档说明与适用范围\n本文档定义星河项目的总体运维要求，适用于参与星河项目生产环境日常巡检、变更、监控、备份与故障处理的全体工程师"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:1",
+          "chunk_index": 1,
+          "text_preview": "星河项目总体运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产环境 | 承载真实业务流量的运行环境 |\n| 测试环境 | 用"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:2",
+          "chunk_index": 2,
+          "text_preview": "星河项目总体运维规范 > 3. 系统构成\n星河项目由以下核心组件构成，各组件相互依赖，任一组件异常都可能影响整体业务：\n星河项目总体运维规范 > 3. 系统构成"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:3",
+          "chunk_index": 3,
+          "text_preview": "星河项目总体运维规范 > 4. 环境与部署\n| 环境 | 机房 | 说明 |\n| --- | --- | --- |\n| 生产环境 | A3 机房 | 承载真实"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:4",
+          "chunk_index": 4,
+          "text_preview": "星河项目总体运维规范 > 5. 数据库备份\n星河项目生产数据库每日凌晨 2:30 执行备份。备份策略、保留周期、恢复前检查与工单要求详见《数据库备份与恢复管理规"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:5",
+          "chunk_index": 5,
+          "text_preview": "星河项目总体运维规范 > 6. Redis 用途与边界\nRedis 用于缓存和部分会话状态。其部署方式、持久化策略与容量管理详见《Redis 部署与运维规范》。"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:6",
+          "chunk_index": 6,
+          "text_preview": "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:7",
+          "chunk_index": 7,
+          "text_preview": "星河项目总体运维规范 > 8. 巡检\n值班工程师每日执行例行巡检，巡检内容包括：\n星河项目总体运维规范 > 8. 巡检\n- 数据库备份任务是否正常完成；\n- R"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:8",
+          "chunk_index": 8,
+          "text_preview": "星河项目总体运维规范 > 9. 变更管理\n生产环境变更必须提前申请，安排在变更窗口内执行，并遵循以下原则：\n星河项目总体运维规范 > 9. 变更管理\n- 变更前"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:9",
+          "chunk_index": 9,
+          "text_preview": "星河项目总体运维规范 > 10. 容量管理\n各组件应定期评估容量，避免资源耗尽引发故障：\n星河项目总体运维规范 > 10. 容量管理\n- 数据库存储容量按业务增"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:10",
+          "chunk_index": 10,
+          "text_preview": "星河项目总体运维规范 > 11. 故障升级\n发生故障时，值班工程师应按《生产故障响应与升级规范》进行分级、登记事件单并升级。故障分级、响应时限与责任矩阵以该规范"
+        },
+        {
+          "chunk_id": "01_xinghe_operations.md:11",
+          "chunk_index": 11,
+          "text_preview": "星河项目总体运维规范 > 12. 责任边界\n各组件（数据库、Redis、服务器、安全）的操作责任边界分别由对应专项规范定义；涉及跨组件的责任归属，按项目责任矩阵"
+        }
+      ]
+    },
+    {
+      "document": "02_database_backup_policy.md",
+      "document_id": "02_database_backup_policy.md",
+      "chunk_count": 13,
+      "chunks": [
+        {
+          "chunk_id": "02_database_backup_policy.md:0",
+          "chunk_index": 0,
+          "text_preview": "数据库备份与恢复管理规范 > 1. 文档说明与适用范围\n本文档定义各项目、各环境数据库的备份与恢复管理要求，适用于数据库管理员、运维工程师及相关值班人员。数据库"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:1",
+          "chunk_index": 1,
+          "text_preview": "数据库备份与恢复管理规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 全量备份 | 对数据库完整数据集进行的备份 |\n| 增量备份 "
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:2",
+          "chunk_index": 2,
+          "text_preview": "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:3",
+          "chunk_index": 3,
+          "text_preview": "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:4",
+          "chunk_index": 4,
+          "text_preview": "数据库备份与恢复管理规范 > 5. 备份执行流程\n每次备份按以下流程执行：\n数据库备份与恢复管理规范 > 5. 备份执行流程\n1. 备份前确认数据库状态正常、无"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:5",
+          "chunk_index": 5,
+          "text_preview": "数据库备份与恢复管理规范 > 6. 备份文件管理\n备份文件按「项目 + 环境 + 日期」进行标识，便于追溯。备份文件应存放在与生产库隔离的存储位置，避免与业务数"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:6",
+          "chunk_index": 6,
+          "text_preview": "数据库备份与恢复管理规范 > 7. 恢复前检查\n任何恢复操作前，必须先对备份文件进行完整性检查，确认文件可恢复后方可执行恢复。恢复操作必须登记工单，记录恢复对象"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:7",
+          "chunk_index": 7,
+          "text_preview": "数据库备份与恢复管理规范 > 8. 恢复流程\n恢复操作按以下流程执行：\n数据库备份与恢复管理规范 > 8. 恢复流程\n1. 确认恢复目标与来源备份文件；\n2. "
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:8",
+          "chunk_index": 8,
+          "text_preview": "数据库备份与恢复管理规范 > 9. 备份监控与告警\n备份任务由统一调度系统管理。备份任务失败或未按时完成时，调度系统自动触发告警并通知值班工程师。值班工程师需确"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:9",
+          "chunk_index": 9,
+          "text_preview": "数据库备份与恢复管理规范 > 10. 定期恢复演练\n为验证备份文件的可恢复性，各项目应定期进行备份恢复演练。演练需记录演练对象、演练结果与发现的问题。恢复演练用"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:10",
+          "chunk_index": 10,
+          "text_preview": "数据库备份与恢复管理规范 > 11. 备份与恢复工单要求\n- 备份任务异常（含失败、未按时完成）必须登记工单；\n- 恢复操作必须登记工单；\n- 工单需记录操作时"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:11",
+          "chunk_index": 11,
+          "text_preview": "数据库备份与恢复管理规范 > 12. 注意事项\n- 全量备份与增量备份的文件性质不同，保留规则以「保留周期」为准；\n- 测试环境与生产环境的备份文件不得交叉使用"
+        },
+        {
+          "chunk_id": "02_database_backup_policy.md:12",
+          "chunk_index": 12,
+          "text_preview": "数据库备份与恢复管理规范 > 13. 异常处理\n备份任务失败后，值班工程师应第一时间登记事件单并按《生产故障响应与升级规范》升级。备份失败属于需要登记和升级的异"
+        }
+      ]
+    },
+    {
+      "document": "03_redis_operations.md",
+      "document_id": "03_redis_operations.md",
+      "chunk_count": 16,
+      "chunks": [
+        {
+          "chunk_id": "03_redis_operations.md:0",
+          "chunk_index": 0,
+          "text_preview": "Redis 部署与运维规范 > 1. 文档说明与适用范围\n本文档定义 Redis 的部署、持久化、监控与故障恢复要求，适用于 Redis 维护人员及相关值班工程"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:1",
+          "chunk_index": 1,
+          "text_preview": "Redis 部署与运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| RDB | Redis 在内存数据快照基础上生成的二进制持久"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:2",
+          "chunk_index": 2,
+          "text_preview": "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+        },
+        {
+          "chunk_id": "03_redis_operations.md:3",
+          "chunk_index": 3,
+          "text_preview": "Redis 部署与运维规范 > 4. 用途\nRedis 在星河项目中的用途包括：\nRedis 部署与运维规范 > 4. 用途\n- 缓存：缓存热点数据，降低数据库"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:4",
+          "chunk_index": 4,
+          "text_preview": "Redis 部署与运维规范 > 5. 持久化：RDB 与 AOF\nRedis 的持久化与数据库备份不是同一个概念。Redis 持久化解决「内存数据重启后恢复」的"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:5",
+          "chunk_index": 5,
+          "text_preview": "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:6",
+          "chunk_index": 6,
+          "text_preview": "Redis 部署与运维规范 > 7. AOF 重写\n为避免 AOF 日志无限增长，当 AOF 文件增长超过 100% 且大小超过 64MB 时，Redis 会触"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:7",
+          "chunk_index": 7,
+          "text_preview": "Redis 部署与运维规范 > 8. 内存淘汰策略\n当 Redis 内存不足时，按淘汰策略决定哪些 key 被淘汰。生产环境默认采用 allkeys-lru 策"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:8",
+          "chunk_index": 8,
+          "text_preview": "Redis 部署与运维规范 > 9. 高内存使用率排查\n当 Redis 内存使用率超过 75% 触发告警时，按以下步骤排查：\nRedis 部署与运维规范 > 9"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:9",
+          "chunk_index": 9,
+          "text_preview": "Redis 部署与运维规范 > 10. 主从同步监控\n值班巡检需确认主从同步状态正常，主从同步延迟应保持在可接受范围内。若同步延迟异常增大，需排查网络、主节点负"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:10",
+          "chunk_index": 10,
+          "text_preview": "Redis 部署与运维规范 > 11. 容量规划\nRedis 内存容量按缓存体量与增长趋势定期评估，避免频繁触发淘汰或告警。容量不足时，应在变更窗口内完成扩容或"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:11",
+          "chunk_index": 11,
+          "text_preview": "Redis 部署与运维规范 > 12. 日常操作清单\nRedis 维护人员的日常操作包括：\nRedis 部署与运维规范 > 12. 日常操作清单\n- 检查主从同"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:12",
+          "chunk_index": 12,
+          "text_preview": "Redis 部署与运维规范 > 13. 主从切换与故障恢复\n主节点故障时，哨兵通过监控判定主节点下线并自动触发切换，将某从节点提升为主节点。切换完成后需验证读写"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:13",
+          "chunk_index": 13,
+          "text_preview": "Redis 部署与运维规范 > 14. 危险命令管控\n禁止在生产环境直接执行可能影响数据安全或阻塞服务的危险命令，包括但不限于全量清理类命令。危险命令操作必须在"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:14",
+          "chunk_index": 14,
+          "text_preview": "Redis 部署与运维规范 > 15. 与数据库备份的关系\nRedis 的持久化（快照与 AOF）与数据库备份解决的是不同问题，不得互相替代，也不得用「Redi"
+        },
+        {
+          "chunk_id": "03_redis_operations.md:15",
+          "chunk_index": 15,
+          "text_preview": "Redis 部署与运维规范 > 16. 监控指标\nRedis 需重点监控以下指标：\nRedis 部署与运维规范 > 16. 监控指标\n- 内存使用率；\n- 命中"
+        }
+      ]
+    },
+    {
+      "document": "04_server_operations.md",
+      "document_id": "04_server_operations.md",
+      "chunk_count": 15,
+      "chunks": [
+        {
+          "chunk_id": "04_server_operations.md:0",
+          "chunk_index": 0,
+          "text_preview": "服务器部署与日常运维规范 > 1. 文档说明与适用范围\n本文档定义服务器的部署、巡检、监控、重启与变更要求，适用于服务器管理员及相关值班工程师。"
+        },
+        {
+          "chunk_id": "04_server_operations.md:1",
+          "chunk_index": 1,
+          "text_preview": "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 "
+        },
+        {
+          "chunk_id": "04_server_operations.md:2",
+          "chunk_index": 2,
+          "text_preview": "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+        },
+        {
+          "chunk_id": "04_server_operations.md:3",
+          "chunk_index": 3,
+          "text_preview": "服务器部署与日常运维规范 > 4. 每日巡检\n服务器管理员每日执行巡检，内容包括：\n服务器部署与日常运维规范 > 4. 每日巡检\n- CPU、内存、磁盘使用率是"
+        },
+        {
+          "chunk_id": "04_server_operations.md:4",
+          "chunk_index": 4,
+          "text_preview": "服务器部署与日常运维规范 > 5. 每周深度巡检\n除每日巡检外，服务器管理员每周执行一次深度巡检，内容包括：\n服务器部署与日常运维规范 > 5. 每周深度巡检\n"
+        },
+        {
+          "chunk_id": "04_server_operations.md:5",
+          "chunk_index": 5,
+          "text_preview": "服务器部署与日常运维规范 > 6. CPU 温度过高处理\n当服务器 CPU 温度过高触发告警时，按顺序检查：\n服务器部署与日常运维规范 > 6. CPU 温度过"
+        },
+        {
+          "chunk_id": "04_server_operations.md:6",
+          "chunk_index": 6,
+          "text_preview": "服务器部署与日常运维规范 > 7. 资源阈值\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5"
+        },
+        {
+          "chunk_id": "04_server_operations.md:7",
+          "chunk_index": 7,
+          "text_preview": "服务器部署与日常运维规范 > 8. 磁盘与日志管理\n服务器日志应按策略轮转，避免日志无限增长占满磁盘。磁盘空间不足时，优先清理可安全删除的旧日志，再评估扩容。日"
+        },
+        {
+          "chunk_id": "04_server_operations.md:8",
+          "chunk_index": 8,
+          "text_preview": "服务器部署与日常运维规范 > 9. 容量与扩容流程\n服务器磁盘或内存不足时，按以下流程处理：\n服务器部署与日常运维规范 > 9. 容量与扩容流程\n1. 评估当前"
+        },
+        {
+          "chunk_id": "04_server_operations.md:9",
+          "chunk_index": 9,
+          "text_preview": "服务器部署与日常运维规范 > 10. 服务器重启流程\n服务器重启属于高风险操作，必须遵循以下流程：\n服务器部署与日常运维规范 > 10. 服务器重启流程\n1. "
+        },
+        {
+          "chunk_id": "04_server_operations.md:10",
+          "chunk_index": 10,
+          "text_preview": "服务器部署与日常运维规范 > 11. 变更窗口\n生产环境变更窗口为每周二、四 22:00 至次日 02:00。服务器重启、配置变更等操作应尽量安排在变更窗口内执"
+        },
+        {
+          "chunk_id": "04_server_operations.md:11",
+          "chunk_index": 11,
+          "text_preview": "服务器部署与日常运维规范 > 12. 系统补丁与升级\n服务器操作系统与应用补丁应定期评估并升级。补丁升级前需在测试环境验证，确认无异常后再安排生产升级。生产升级"
+        },
+        {
+          "chunk_id": "04_server_operations.md:12",
+          "chunk_index": 12,
+          "text_preview": "服务器部署与日常运维规范 > 13. 权限差异\n生产环境与测试环境的操作权限不同：生产服务器仅授权运维角色操作，测试服务器可由开发与测试人员操作，但均要求登记操"
+        },
+        {
+          "chunk_id": "04_server_operations.md:13",
+          "chunk_index": 13,
+          "text_preview": "服务器部署与日常运维规范 > 14. 硬件故障登记\n服务器硬件故障（风扇、散热、磁盘等）必须登记事件单，记录故障现象、影响范围与处理结果。硬件故障处理完成后需复"
+        },
+        {
+          "chunk_id": "04_server_operations.md:14",
+          "chunk_index": 14,
+          "text_preview": "服务器部署与日常运维规范 > 15. 告警响应与处理\n服务器告警触发后，服务器管理员应：\n服务器部署与日常运维规范 > 15. 告警响应与处理\n1. 确认告警内"
+        }
+      ]
+    },
+    {
+      "document": "05_security_policy.md",
+      "document_id": "05_security_policy.md",
+      "chunk_count": 17,
+      "chunks": [
+        {
+          "chunk_id": "05_security_policy.md:0",
+          "chunk_index": 0,
+          "text_preview": "权限控制与安全审计规范 > 1. 文档说明与适用范围\n本文档定义权限控制、安全审计与敏感信息管理要求，适用于全体工程与运维人员。安全原则贯穿数据库、Redis、"
+        },
+        {
+          "chunk_id": "05_security_policy.md:1",
+          "chunk_index": 1,
+          "text_preview": "权限控制与安全审计规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 最小权限 | 仅授予完成工作所必需的最小权限 |\n| 审计日志 "
+        },
+        {
+          "chunk_id": "05_security_policy.md:2",
+          "chunk_index": 2,
+          "text_preview": "权限控制与安全审计规范 > 3. 角色与权限分级\n系统角色按职责划分，主要包括：\n权限控制与安全审计规范 > 3. 角色与权限分级\n- 开发与测试角色：仅可操作"
+        },
+        {
+          "chunk_id": "05_security_policy.md:3",
+          "chunk_index": 3,
+          "text_preview": "权限控制与安全审计规范 > 4. 权限原则\n- 最小权限原则：任何账号只拥有完成本职工作所需的最小权限。\n- 生产环境访问需要审批，审批通过后方可临时授权。\n-"
+        },
+        {
+          "chunk_id": "05_security_policy.md:4",
+          "chunk_index": 4,
+          "text_preview": "权限控制与安全审计规范 > 5. 访问控制\n生产环境访问通过受控入口进行，访问操作需登记，便于追溯。临时授权的访问权限应在任务结束后及时回收，避免权限残留。"
+        },
+        {
+          "chunk_id": "05_security_policy.md:5",
+          "chunk_index": 5,
+          "text_preview": "权限控制与安全审计规范 > 6. 审计日志\n| 项目 | 保留周期 |\n| --- | --- |\n| 审计日志 | 90 天 |\n权限控制与安全审计规范 > "
+        },
+        {
+          "chunk_id": "05_security_policy.md:6",
+          "chunk_index": 6,
+          "text_preview": "权限控制与安全审计规范 > 7. 账号生命周期\n账号的申请、变更与回收需遵循统一流程：\n权限控制与安全审计规范 > 7. 账号生命周期\n- 账号申请需说明用途与"
+        },
+        {
+          "chunk_id": "05_security_policy.md:7",
+          "chunk_index": 7,
+          "text_preview": "权限控制与安全审计规范 > 8. 密码与密钥管理\n- 密码需满足复杂度要求（至少 12 位，含大小写字母、数字与特殊字符），并定期轮换；\n- API Key、密"
+        },
+        {
+          "chunk_id": "05_security_policy.md:8",
+          "chunk_index": 8,
+          "text_preview": "权限控制与安全审计规范 > 9. 数据分级\n数据按敏感程度分为公开、内部、机密三级。机密数据（含密钥、口令、核心业务数据）的存储与传输必须采用加密措施，访问需额"
+        },
+        {
+          "chunk_id": "05_security_policy.md:9",
+          "chunk_index": 9,
+          "text_preview": "权限控制与安全审计规范 > 10. 加密要求\n对存储与传输中的敏感数据，应采用加密措施；具体算法与强度按公司安全基线与合规要求执行。涉及数据库备份文件、Redi"
+        },
+        {
+          "chunk_id": "05_security_policy.md:10",
+          "chunk_index": 10,
+          "text_preview": "权限控制与安全审计规范 > 11. 生产日志要求\n生产日志禁止直接记录密钥或密码。日志中若出现疑似密钥内容，应立即脱敏并排查来源。日志的访问也应受控，防止敏感信"
+        },
+        {
+          "chunk_id": "05_security_policy.md:11",
+          "chunk_index": 11,
+          "text_preview": "权限控制与安全审计规范 > 12. 安全事件上报\n发现疑似安全事件（越权访问、信息泄露、异常登录等）时，应立即上报安全角色并登记，不得隐瞒或拖延。安全事件处理过"
+        },
+        {
+          "chunk_id": "05_security_policy.md:12",
+          "chunk_index": 12,
+          "text_preview": "权限控制与安全审计规范 > 13. 安全意识与培训\n定期开展安全意识培训，覆盖密码管理、敏感信息保护、越权风险等内容，提升全员安全意识。"
+        },
+        {
+          "chunk_id": "05_security_policy.md:13",
+          "chunk_index": 13,
+          "text_preview": "权限控制与安全审计规范 > 14. 责任边界\n权限与安全审计的具体责任人、审批流程，按项目责任矩阵执行。"
+        },
+        {
+          "chunk_id": "05_security_policy.md:14",
+          "chunk_index": 14,
+          "text_preview": "权限控制与安全审计规范 > 15. 数据传输加密\n敏感数据在网络上传输时，应采用加密通道，防止在传输过程中被窃取或篡改。涉及机密数据的跨网络传输，需使用加密传输"
+        },
+        {
+          "chunk_id": "05_security_policy.md:15",
+          "chunk_index": 15,
+          "text_preview": "权限控制与安全审计规范 > 16. 第三方访问管理\n外部合作方或第三方需要访问内部系统时，应遵循最小权限原则，通过审批后临时授权，并在任务结束后及时回收权限与账"
+        },
+        {
+          "chunk_id": "05_security_policy.md:16",
+          "chunk_index": 16,
+          "text_preview": "权限控制与安全审计规范 > 17. 审计核查\n安全角色定期对审计日志进行核查，识别越权、异常登录与未授权操作。核查发现的问题应登记并跟进处理。"
+        }
+      ]
+    },
+    {
+      "document": "06_incident_response.md",
+      "document_id": "06_incident_response.md",
+      "chunk_count": 15,
+      "chunks": [
+        {
+          "chunk_id": "06_incident_response.md:0",
+          "chunk_index": 0,
+          "text_preview": "生产故障响应与升级规范 > 1. 文档说明与适用范围\n本文档定义生产故障的分级、响应、升级与复盘要求，适用于值班工程师、数据库管理员、运维负责人与安全人员。本文"
+        },
+        {
+          "chunk_id": "06_incident_response.md:1",
+          "chunk_index": 1,
+          "text_preview": "生产故障响应与升级规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| P1 | 影响核心业务、需立即处理的最高优先级故障 |\n| P2"
+        },
+        {
+          "chunk_id": "06_incident_response.md:2",
+          "chunk_index": 2,
+          "text_preview": "生产故障响应与升级规范 > 3. 故障分级与响应时间\n| 级别 | 定义 | 响应时间要求 |\n| --- | --- | --- |\n| P1 | 核心业务中"
+        },
+        {
+          "chunk_id": "06_incident_response.md:3",
+          "chunk_index": 3,
+          "text_preview": "生产故障响应与升级规范 > 4. 故障分级示例\n为便于值班工程师快速判定，给出如下示例（示例仅作参考，最终以影响范围为准）：\n生产故障响应与升级规范 > 4. "
+        },
+        {
+          "chunk_id": "06_incident_response.md:4",
+          "chunk_index": 4,
+          "text_preview": "生产故障响应与升级规范 > 5. 事件单要求\n数据库、Redis、服务器故障均需要创建事件单，记录以下字段：\n生产故障响应与升级规范 > 5. 事件单要求\n- "
+        },
+        {
+          "chunk_id": "06_incident_response.md:5",
+          "chunk_index": 5,
+          "text_preview": "生产故障响应与升级规范 > 6. 事件单生命周期\n事件单状态依次流转：新建 → 处理中 → 已解决 → 已关闭。每个状态变更需记录时间与操作人，确保全程可追溯。"
+        },
+        {
+          "chunk_id": "06_incident_response.md:6",
+          "chunk_index": 6,
+          "text_preview": "生产故障响应与升级规范 > 7. 升级要求\n- P1 故障需要立即升级；\n- P2 / P3 故障按响应时间窗口处理，超时未解决需逐级升级。\n生产故障响应与升级"
+        },
+        {
+          "chunk_id": "06_incident_response.md:7",
+          "chunk_index": 7,
+          "text_preview": "生产故障响应与升级规范 > 8. 数据库备份失败处理\n数据库备份失败属于需要登记和升级的异常场景。值班工程师发现备份失败后，应登记事件单并按本规范升级，不得因「"
+        },
+        {
+          "chunk_id": "06_incident_response.md:8",
+          "chunk_index": 8,
+          "text_preview": "生产故障响应与升级规范 > 9. 组件故障处理\n- Redis 主节点故障：按《Redis 部署与运维规范》执行主从切换，切换后验证读写。\n- 服务器宕机：按《"
+        },
+        {
+          "chunk_id": "06_incident_response.md:9",
+          "chunk_index": 9,
+          "text_preview": "生产故障响应与升级规范 > 10. 复盘要求\n故障处理完成后必须进行复盘，复盘内容包括：\n生产故障响应与升级规范 > 10. 复盘要求\n- 根因分析；\n- 影响"
+        },
+        {
+          "chunk_id": "06_incident_response.md:10",
+          "chunk_index": 10,
+          "text_preview": "生产故障响应与升级规范 > 11. 值班与演练\n生产环境实行值班制度，值班工程师负责接收告警与初步处置。告警统一通过企业微信等渠道通知值班工程师。定期组织故障演"
+        },
+        {
+          "chunk_id": "06_incident_response.md:11",
+          "chunk_index": 11,
+          "text_preview": "生产故障响应与升级规范 > 12. 责任边界\n本文描述的角色包括值班工程师、数据库管理员、运维负责人与安全人员。具体的责任归属与审批流程，按项目责任矩阵执行。"
+        },
+        {
+          "chunk_id": "06_incident_response.md:12",
+          "chunk_index": 12,
+          "text_preview": "生产故障响应与升级规范 > 13. 响应处理流程\n值班工程师接收告警后，按以下流程处理：\n生产故障响应与升级规范 > 13. 响应处理流程\n1. 确认故障现象与"
+        },
+        {
+          "chunk_id": "06_incident_response.md:13",
+          "chunk_index": 13,
+          "text_preview": "生产故障响应与升级规范 > 14. 应急联系\n值班工程师无法独立处置故障时，应按升级路径联系对应角色。各角色的值班安排与联系方式见值班表。"
+        },
+        {
+          "chunk_id": "06_incident_response.md:14",
+          "chunk_index": 14,
+          "text_preview": "生产故障响应与升级规范 > 15. 故障报告\n重大故障处理后，需形成故障报告，包含故障时间、影响范围、根因、处理过程与改进措施。故障报告应归档并通报相关团队，作"
+        }
+      ]
+    }
+  ]
+}

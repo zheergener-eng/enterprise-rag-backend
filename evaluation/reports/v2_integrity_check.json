@@ -1,0 +1,17 @@
+{
+  "dataset_size": 96,
+  "categories": {
+    "direct_answerable": 15,
+    "paraphrase_answerable": 15,
+    "entity_disambiguation": 12,
+    "multi_turn": 20,
+    "hard_negative": 24,
+    "irrelevant": 10
+  },
+  "answerable_unmapped": [],
+  "forbidden_signal_leaks": [],
+  "hard_negative_count": 24,
+  "irrelevant_count": 10,
+  "passed": true,
+  "problems": []
+}

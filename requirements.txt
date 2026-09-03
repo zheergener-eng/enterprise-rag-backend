@@ -1,0 +1,18 @@
+# ===== Web 框架 =====
+fastapi==0.141.1
+uvicorn==0.52.4
+# multipart/form-data 文件上传解析（UploadFile / Form）
+python-multipart==0.0.20
+
+# ===== 数据校验 / 配置 =====
+pydantic==2.13.5
+python-dotenv==1.2.3
+
+# ===== Embedding（向量化）=====
+sentence-transformers==6.0.0
+
+# ===== Redis Stack（向量检索 + 会话存储）=====
+redis==8.1.0
+
+# ===== LLM（OpenAI 兼容协议，对接 DeepSeek）=====
+openai==3.6.0

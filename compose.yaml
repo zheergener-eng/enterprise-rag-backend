@@ -1,0 +1,58 @@
+# Enterprise_RAG 后端原型 —— Docker Compose 一键启动。
+#
+#   docker compose up -d --build   # 构建并启动（Redis Stack + FastAPI）
+#   docker compose down            # 停止并移除容器（保留数据卷）
+#
+# 服务：
+#   redis —— Redis Stack（RediSearch 向量检索 + 会话存储），数据持久化到 redis_data 卷
+#   api   —— FastAPI 后端，通过 compose 服务名 redis:6379 访问 Redis
+
+name: enterprise-rag
+
+services:
+  redis:
+    # Redis Stack 镜像：包含 RediSearch（HNSW 向量检索）+ RedisJSON，与本地开发一致
+    image: redis/redis-stack-server:latest
+    restart: unless-stopped
+    environment:
+      # 开启 AOF 持久化（默认 RDB 快照触发点过高，少量数据时 docker compose down 会丢数据）。
+      # appendfsync everysec：每秒落盘，崩溃/强杀最多丢 1 秒写入；数据落在 redis_data 卷。
+      REDIS_ARGS: "--appendonly yes --appendfsync everysec"
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      redis:
+        # 等待 Redis healthcheck 通过后再启动，避免 API 因 Redis 未就绪而失败
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # 容器内通过 compose 服务名访问 Redis（container 内 localhost = api 自身）
+      REDIS_URL: redis://redis:6379
+      # HuggingFace 模型缓存落命名卷，重建镜像 / 重启容器不重复下载模型
+      HF_HOME: /root/.cache/huggingface
+    volumes:
+      - hf_cache:/root/.cache/huggingface
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  redis_data:
+  hf_cache:

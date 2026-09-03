@@ -1,0 +1,985 @@
+[
+  {
+    "case_id": "d001",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "d002",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "d003",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "d004",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "d005",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "d006",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+    ]
+  },
+  {
+    "case_id": "d007",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|"
+    ]
+  },
+  {
+    "case_id": "d008",
+    "expected_document_ids": [
+      "05_security_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "05_security_policy.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "权限控制与安全审计规范 > 6. 审计日志\n| 项目 | 保留周期 |\n| --- | --- |\n| 审计日志 | 90 天 |\n权限控制与安全审计规范 > "
+    ]
+  },
+  {
+    "case_id": "d009",
+    "expected_document_ids": [
+      "04_server_operations.md",
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2",
+      "01_xinghe_operations.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |",
+      "星河项目总体运维规范 > 4. 环境与部署\n| 环境 | 机房 | 说明 |\n| --- | --- | --- |\n| 生产环境 | A3 机房 | 承载真实"
+    ]
+  },
+  {
+    "case_id": "d010",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+    ]
+  },
+  {
+    "case_id": "d011",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+    ]
+  },
+  {
+    "case_id": "d012",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "d013",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:10"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 11. 变更窗口\n生产环境变更窗口为每周二、四 22:00 至次日 02:00。服务器重启、配置变更等操作应尽量安排在变更窗口内执"
+    ]
+  },
+  {
+    "case_id": "d014",
+    "expected_document_ids": [
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "01_xinghe_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分"
+    ]
+  },
+  {
+    "case_id": "d015",
+    "expected_document_ids": [
+      "01_xinghe_operations.md",
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "01_xinghe_operations.md:6",
+      "04_server_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分",
+      "服务器部署与日常运维规范 > 7. 资源阈值\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5"
+    ]
+  },
+  {
+    "case_id": "p001",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "p002",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "p003",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "p004",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "p005",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "p006",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|"
+    ]
+  },
+  {
+    "case_id": "p007",
+    "expected_document_ids": [
+      "05_security_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "05_security_policy.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "权限控制与安全审计规范 > 6. 审计日志\n| 项目 | 保留周期 |\n| --- | --- |\n| 审计日志 | 90 天 |\n权限控制与安全审计规范 > "
+    ]
+  },
+  {
+    "case_id": "p008",
+    "expected_document_ids": [
+      "04_server_operations.md",
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2",
+      "01_xinghe_operations.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |",
+      "星河项目总体运维规范 > 4. 环境与部署\n| 环境 | 机房 | 说明 |\n| --- | --- | --- |\n| 生产环境 | A3 机房 | 承载真实"
+    ]
+  },
+  {
+    "case_id": "p009",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+    ]
+  },
+  {
+    "case_id": "p010",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+    ]
+  },
+  {
+    "case_id": "p011",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "p012",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "p013",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:10"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 11. 变更窗口\n生产环境变更窗口为每周二、四 22:00 至次日 02:00。服务器重启、配置变更等操作应尽量安排在变更窗口内执"
+    ]
+  },
+  {
+    "case_id": "p014",
+    "expected_document_ids": [
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "01_xinghe_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分"
+    ]
+  },
+  {
+    "case_id": "p015",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 7. 资源阈值\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5"
+    ]
+  },
+  {
+    "case_id": "e001",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e002",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e003",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e004",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e005",
+    "expected_document_ids": [
+      "03_redis_operations.md",
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:5",
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|",
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e006",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "e007",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "e008",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+    ]
+  },
+  {
+    "case_id": "e009",
+    "expected_document_ids": [
+      "05_security_policy.md",
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "05_security_policy.md:5",
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "权限控制与安全审计规范 > 6. 审计日志\n| 项目 | 保留周期 |\n| --- | --- |\n| 审计日志 | 90 天 |\n权限控制与安全审计规范 > ",
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e010",
+    "expected_document_ids": [
+      "03_redis_operations.md",
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:4",
+      "01_xinghe_operations.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 5. 持久化：RDB 与 AOF\nRedis 的持久化与数据库备份不是同一个概念。Redis 持久化解决「内存数据重启后恢复」的",
+      "星河项目总体运维规范 > 6. Redis 用途与边界\nRedis 用于缓存和部分会话状态。其部署方式、持久化策略与容量管理详见《Redis 部署与运维规范》。"
+    ]
+  },
+  {
+    "case_id": "e011",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "e012",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "m001_t1",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "m001_t2",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m002_t1",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:5"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|"
+    ]
+  },
+  {
+    "case_id": "m002_t2",
+    "expected_document_ids": [
+      "03_redis_operations.md",
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:5",
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 6. 快照与日志保留策略\n| 项目 | 保留策略 |\n| --- | --- |\n| RDB 快照文件 | 保留 3 天 |\n|",
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m003_t1",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m003_t2",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m004_t1",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "m004_t2",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m005_t1",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+    ]
+  },
+  {
+    "case_id": "m005_t2",
+    "expected_document_ids": [
+      "04_server_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "04_server_operations.md:1",
+      "04_server_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "服务器部署与日常运维规范 > 2. 术语\n| 术语 | 说明 |\n| --- | --- |\n| 生产服务器 | 部署在 A3 机房、承载真实业务流量的服务器 ",
+      "服务器部署与日常运维规范 > 3. 机房部署\n| 环境 | 机房 |\n| --- | --- |\n| 星河项目生产服务器 | A3 机房 |\n| 测试服务器 |"
+    ]
+  },
+  {
+    "case_id": "m006_t1",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+    ]
+  },
+  {
+    "case_id": "m006_t2",
+    "expected_document_ids": [
+      "03_redis_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "03_redis_operations.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "Redis 部署与运维规范 > 3. 部署方式\nRedis 默认服务端口为 6379。生产环境采用「主从 + 哨兵」方案：\nRedis 部署与运维规范 > 3."
+    ]
+  },
+  {
+    "case_id": "m007_t1",
+    "expected_document_ids": [
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "01_xinghe_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分"
+    ]
+  },
+  {
+    "case_id": "m007_t2",
+    "expected_document_ids": [
+      "01_xinghe_operations.md"
+    ],
+    "relevant_chunk_ids": [
+      "01_xinghe_operations.md:6"
+    ],
+    "relevant_chunk_text_preview": [
+      "星河项目总体运维规范 > 7. 监控规则\n| 指标 | 告警阈值 | 处理要求 |\n| --- | --- | --- |\n| CPU 使用率 | 连续 5 分"
+    ]
+  },
+  {
+    "case_id": "m008_t1",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:2"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 3. 各项目备份时间\n| 对象 | 备份时间 | 备份类型 |\n| --- | --- | --- |\n| 星河项目生产库 | 每"
+    ]
+  },
+  {
+    "case_id": "m008_t2",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m008_t3",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m009_t1",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m009_t2",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "m009_t3",
+    "expected_document_ids": [
+      "02_database_backup_policy.md"
+    ],
+    "relevant_chunk_ids": [
+      "02_database_backup_policy.md:3"
+    ],
+    "relevant_chunk_text_preview": [
+      "数据库备份与恢复管理规范 > 4. 各项目备份保留周期\n| 对象 | 保留周期 |\n| --- | --- |\n| 星河项目生产库 | 14 天 |\n| 天枢项"
+    ]
+  },
+  {
+    "case_id": "hn001",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn002",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn003",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn004",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn005",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn006",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn007",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn008",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn009",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn010",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn011",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn012",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn013",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn014",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn015",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn016",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn017",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn018",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn019",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn020",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn021",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn022",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn023",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "hn024",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir001",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir002",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir003",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir004",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir005",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir006",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir007",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir008",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir009",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  },
+  {
+    "case_id": "ir010",
+    "expected_document_ids": [],
+    "relevant_chunk_ids": [],
+    "relevant_chunk_text_preview": []
+  }
+]
